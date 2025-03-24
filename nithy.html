@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.nithyatickets.com/assets/uploads/logo/7016705e1361d101aa41ae2546d4758b.png" type="image/x-icon">
+    <title>Tickets</title>
+    <meta name="msapplication-TileColor" content="">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black">
+
+    <!-- Libs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Custom -->
+    <link rel="stylesheet" href="https://www.nithyatickets.com/assets/css/main.css?v=1.007">
+
+    <style>
+        :root {
+            --font-family: "Poppins", sans-serif;
+            --font-family-alt: "Poppins", sans-serif;
+            --icon-font: 900 1.2em "Line Awesome Free";
+            --font-bookman: "Bookman Old Style", serif;
+        }
+
+        /* Custom font "Bookman Old Style Regular" */
+        @font-face {
+            font-family: "Bookman Old Style";
+            src: url("https://www.nithyatickets.com/assets/fonts/BookmanOldStyle/Bookman Old Style Regular.ttf");
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="main-header-row">
+                <div class="header-logo">
+                    <a href="https://www.nithyatickets.com/">
+                        <img src="https://www.nithyatickets.com/assets/uploads/logo/9026e5c4c3fbd6f15e3b4e897c5a4b4b.png" alt="Nithya Tickets" height="100%">
+                    </a>
+                </div>
+                <div class="header-resp-action">
+                    <button class="resp-menu-btn toggle-menu-btn">
+                        <i class="header-menu-open-icon las la-bars"></i>
+                        <i class="header-menu-close-icon las la-times"></i>
+                    </button>
+                </div>
+                <nav class="header-nav">
+                    <ul>
+                        <li class="nav-active"><a class="scroll-link" href="https://www.nithyatickets.com/#home">Home</a></li>
+                        <li><a class="scroll-link" href="https://www.nithyatickets.com/#about">About Us</a></li>
+                        <li><a href="https://www.nithyatickets.com/videos">Videos</a></li>
+                        <li><a class="scroll-link" href="https://www.nithyatickets.com/#testimonials">Testimonials</a></li>
+                        <li><a class="scroll-link" href="https://www.nithyatickets.com/#faqs">FAQs</a></li>
+                        <li><a href="https://www.nithyatickets.com/gallery">Gallery</a></li>
+                        <li><a href="https://www.nithyatickets.com/blogs">Blog</a></li>
+                        <li><a class="scroll-link" href="https://www.nithyatickets.com/#contact">Contact Us</a></li>
+                    </ul>
+                    <div class="header-resp-nav">
+                        <div class="header-nav-section">
+                            <div class="header-nav-item">
+                                <span class="header-nav-item-icon"><i class="las la-phone"></i></span>
+                                <span class="header-nav-item-text"><a href="tel:8867999997">8867999997</a></span>
+                            </div>
+                            <div class="header-nav-item">
+                                <span class="header-nav-item-icon"><i class="las la-envelope"></i></span>
+                                <span class="header-nav-item-text"><a href="mailto:support@nithyatickets.com">support@nithyatickets.com</a></span>
+                            </div>
+                            <ul class="header-nav-social-links">
+                                <li><a href="https://www.facebook.com/profile.php?id=6157163941" target="_blank" style="color: #1877f2;"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://www.instagram.com/nithyaticket/" target="_blank" style="color: #e1306c;"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/nithya-tickets-1296303" target="_blank" style="color: #0a66c2;"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="https://x.com/NithyaTick24" target="_blank" style="color: #14171a;"><i class="fab fa-x-twitter"></i></a></li>
+                                <li><a href="https://www.youtube.com/@nithyatickets" target="_blank" style="color: #ff0000;"><i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="home-page">
+        <section class="home-section home-banner-section scale-img" id="home">
+            <img src="https://www.nithyatickets.com/assets/images/banner.jpg" alt="" class="home-banner-img">
+            <div class="banner-overlay">
+                <div class="banner-overlay-content">
+                    <div class="container">
+                        <div class="banner-content">
+                            <h1 class="banner-title">Your Premier Online Ticketing Solution</h1>
+                            <p class="banner-text">Revolutionize Your Ticketing Experience with <b>Nithya Tickets</b></p>
+                            <a href="#contact" class="banner-action btn">Enquire Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-section section-gap home-about-section" id="about">
+            <div class="container">
+                <div class="about-section-row">
+                    <div class="about-section-col">
+                        <div class="about-section-content">
+                            <h2 class="section-title" style="font-family: var(--font-bookman);">Are you an event organizer looking to streamline your ticket sales process?</h2>
+                            <p class="about-section-text" style="font-family: var(--font-bookman);">Look no further! Nithya Tickets is your ultimate online ticket booking software tool, designed to simplify the ticketing experience for you and your customers.</p>
+                            <a href="#contact" class="about-action btn" style="font-family: var(--font-bookman);">Enquire Now</a>
+                        </div>
+                    </div>
+                    <div class="about-section-col">
+                        <div class="about-section-img">
+                            <img src="https://www.nithyatickets.com/assets/images/about.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-section section-gap home-solutions-section" style="--bg-img: url(https://www.nithyatickets.com/assets/images/about-bg.png)">
+            <div class="container">
+                <div class="section-header center-header">
+                    <h2 class="section-title">Why Choose Nithya Tickets?</h2>
+                </div>
+                <div class="solutions-section-grid">
+                    <div class="solutions-section-card" style="--icon-color: #ff5865">
+                        <div class="solutions-section-card-icon">
+                            <i class="las la-lightbulb"></i>
+                        </div>
+                        <div class="solutions-section-card-content">
+                            <h3 class="solutions-section-card-title">Effortless Setup</h3>
+                            <p class="solutions-section-card-text">Our intuitive platform makes setting up your events quick and easy. Whether you're hosting a small gathering or a large-scale concert, Nithya Tickets allows you to create and manage events with just a few clicks.</p>
+                        </div>
+                    </div>
+                    <div class="solutions-section-card" style="--icon-color: #f567ce">
+                        <div class="solutions-section-card-icon">
+                            <i class="las la-cog"></i>
+                        </div>
+                        <div class="solutions-section-card-content">
+                            <h3 class="solutions-section-card-title">Customizable Ticketing Options</h3>
+                            <p class="solutions-section-card-text">Tailor your ticket types to suit your event's needs. With Nithya Tickets, you have complete control over your ticket pricing and availability.</p>
+                        </div>
+                    </div>
+                    <div class="solutions-section-card" style="--icon-color: #ffc53f">
+                        <div class="solutions-section-card-icon">
+                            <i class="las la-shield-alt"></i>
+                        </div>
+                        <div class="solutions-section-card-content">
+                            <h3 class="solutions-section-card-title">Secure and Reliable</h3>
+                            <p class="solutions-section-card-text">Rest assured knowing your transactions are safe with our robust security measures. Our platform ensures that all payments are processed securely, giving you and your customers peace of mind.</p>
+                        </div>
+                    </div>
+                    <div class="solutions-section-card" style="--icon-color: #1bd48d">
+                        <div class="solutions-section-card-icon">
+                            <i class="las la-chart-line"></i>
+                        </div>
+                        <div class="solutions-section-card-content">
+                            <h3 class="solutions-section-card-title">Real-Time Analytics</h3>
+                            <p class="solutions-section-card-text">Gain valuable insights into your ticket sales with our comprehensive analytics dashboard.</p>
+                        </div>
+                    </div>
+                    <div class="solutions-section-card" style="--icon-color: #ff8325">
+                        <div class="solutions-section-card-icon">
+                            <i class="las la-headset"></i>
+                        </div>
+                        <div class="solutions-section-card-content">
+                            <h3 class="solutions-section-card-title">Dedicated Support</h3>
+                            <p class="solutions-section-card-text">Our customer support team is here to assist you every step of the way. From initial setup to event day troubleshooting, we're committed to ensuring your success.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-section section-gap home-features-section" style="--bg-img: url(https://www.nithyatickets.com/assets/images/features-bg-mono.png)">
+            <div class="container">
+                <div class="section-header center-header">
+                    <h2 class="section-title">Features</h2>
+                </div>
+                <div class="features-section-slider swiper" id="features-slider">
+                    <div class="swiper-wrapper">
+                        <div class="features-section-card swiper-slide">
+                            <div class="features-section-card-icon">
+                                <i class="las la-lightbulb"></i>
+                            </div>
+                            <div class="features-section-card-content">
+                                <h3 class="features-section-card-title">User -Friendly Interface</h3>
+                                <p class="features-section-card-text">Navigate our platform with ease. Nithya Tickets's user-friendly interface ensures that you spend less time managing your ticketing and more time focusing on your event.</p>
+                            </div>
+                        </div>
+                        <div class="features-section-card swiper-slide">
+                            <div class="features-section-card-icon">
+                                <i class="las la-mobile-alt"></i>
+                            </div>
+                            <div class="features-section-card-content">
+                                <h3 class="features-section-card-title">Mobile Optimization</h3>
+                                <p class="features-section-card-text">Our software is fully optimized for mobile devices, allowing your customers to purchase tickets on the go. Increase your sales by offering a convenient mobile booking experience.</p>
+                            </div>
+                        </div>
+                        <div class="features-section-card swiper-slide">
+                            <div class="features-section-card-icon">
+                                <i class="las la-cog"></i>
+                            </div>
+                            <div class="features-section-card-content">
+                                <h3 class="features-section-card-title">Custom Branding</h3>
+                                <p class="features-section-card-text">Maintain your brand identity with customizable event pages. Add your logo banner image to create a cohesive and professional look.</p>
+                            </div>
+                        </div>
+                        <div class="features-section-card swiper-slide">
+                            <div class="features-section-card-icon">
+                                <i class="las la-envelope"></i>
+                            </div>
+                            <div class="features-section-card-content">
+                                <h3 class="features-section-card-title">Automated Email Notifications</h3>
+                                <p class="features-section-card-text">Keep your attendees informed with automated email notifications. Send out confirmations, reminders, and updates effortlessly, ensuring a smooth communication flow.</p>
+                            </div>
+                        </div>
+                        <div class="features-section-card swiper-slide">
+                            <div class="features-section-card-icon">
+                                <i class="las la-credit-card"></i>
+                            </div>
+                            <div class="features-section-card-content">
+                                <h3 class="features-section-card-title">Multiple Payment Options</h3>
+                                <p class="features-section-card-text">Cater to a global audience with our multiple payment options. Accept payments via Credit cards, Debit cards, UPI and other popular payment methods.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-section section-gap home-works-section" style="--bg-img: url(https://www.nithyatickets.com/assets/images/about-bg.png)">
+            <div class="container">
+                <div class="section-header center-header">
+                    <h2 class="section-title">How It Works</h2>
+                </div>
+                <div class="works-section-grid">
+                    <div class="works-section-card">
+                        <div class="works-section-card-content">
+                            <h3 class="works-section-card-title">Sign Up and Customize Your Profile</h3>
+                            <p class="works-section-card-text">Create your Nithya Tickets account and customize your profile with your event details and branding.</p>
+                        </div>
+                    </div>
+                    <div class="works-section-card">
+                        <div class="works-section-card-content">
+                            <h3 class="works-section-card-title">Create Your Event</h3>
+                            <p class="works-section-card-text">Use our intuitive event creation tool to set up your event. Define ticket prices.</p>
+                        </div>
+                    </div>
+                    <div class="works-section-card">
+                        <div class="works-section-card-content">
+                            <h3 class="works-section-card-title">Promote Your Event</h3>
+                            <p class="works-section-card-text">Share your event page on your website, social media, and through email campaigns. Reach a wider audience and increase your ticket sales.</p>
+                        </div>
+                    </div>
+                    <div class="works-section-card">
+                        <div class="works-section-card-content">
+                            <h3 class="works-section-card-title">Manage Sales and Attendees</h3>
+                            <p class="works-section-card-text">Monitor your ticket sales and manage attendee information through our comprehensive dashboard.</p>
+                        </div>
+                    </div>
+                    <div class="works-section-card">
+                        <div class="works-section-card-content">
+                            <h3 class="works-section-card-title">Host Your Event</h3>
+                            <p class="works-section-card-text">Enjoy a seamless event day experience with our efficient check-in and ticket scanning features.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-section section-gap home-testimonials-section" id="testimonials">
+            <div class="container">
+                <div class="section-header center-header">
+                    <h2 class="section-title">Testimonials</h2>
+                </div>
+                <div class="testimonials-slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide testimonials-slide">
+                            <div class="testimonials-slide-content">
+                                <p class="testimonials-slide-quote"><q>"Nithya Tickets has been a game-changer for promoting and selling tickets for events."</q></p>
+                                <p class="testimonials-slide-author">Anita K., Event Organizer</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide testimonials-slide">
+                            <div class="testimonials-slide-content">
+                                <p class="testimonials-slide-quote"><q>"I was a bit hesitant to use Nithya Tickets initially, but it’s been nothing but a smooth experience."</q></p>
+                                <p class="testimonials-slide-author">Arun V., First-Time User</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide testimonials-slide">
+                            <div class="testimonials-slide-content">
+                                <p class="testimonials-slide-quote"><q>"I booked tickets for a live concert through Nithya Tickets and it was a breeze."</q></p>
+                                <p class="testimonials-slide-author">Shilpa T., Concert Goer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-section section-gap home-faqs-section" id="faqs">
+            <div class="container">
+                <div class="section-header center-header">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                </div>
+                <div class="faqs-section">
+                    <div class="faqs-section-content">
+                        <div class="faqs-section-item">
+                            <div class="faqs-section-question">
+                                <p class="faqs-section-question-text">What is Nithya Tickets?</p>
+                            </div>
+                            <div class="faqs-section-answer">
+                                <p class="faqs-section-answer-text">Nithya Tickets is a powerful online ticketing platform tailored to make event management easy and efficient.</p>
+                            </div>
+                        </div>
+                        <div class="faqs-section-item">
+                            <div class="faqs-section-question">
+                                <p class="faqs-section-question-text">Key Features include:</p>
+                            </div>
+                            <div class="faqs-section-answer">
+                                <p class="faqs-section-answer-text">Customizable Ticketing Options, Secure Payment Processing, Comprehensive Analytics, Real-Time Tracking, Easy Event Management.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-section home-contact-section" id="contact">
+            <div class="home-contact-header section-gap">
+                <div class="container">
+                    <div class="section-header center-header">
+                        <h2 class="section-title">Get Started Today!</h2>
+                        <p class="section-title-sm">Ready to elevate your ticketing experience? Sign up for Nithya Tickets and take the first step towards hassle-free event management.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="home-contact-container">
+                <div class="container container-sm">
+                    <div class="home-contact-row">
+                        <div class="home-contact-info">
+                            <div class="section-header">
+                                <h3 class="contact-info-title">Contact Information</h3>
+                                <p class="contact-info-description">Have questions? Feel free to reach out to our support team. We're here to help!</p>
+                            </div>
+                            <div class="home-contact-info-content">
+                                <div class="home-contact-info-item">
+                                    <div class="home-contact-info-item-icon">
+                                        <i class="las la-envelope"></i>
+                                    </div>
+                                    <div class="home-contact-info-item-text">
+                                        <p class="home-contact-info-item-line"><a href="mailto:support@nithyatickets.com">support@nithyatickets.com</a></p>
+                                    </div>
+                                </div>
+                                <div class="home-contact-info-item">
+                                    <div class="home-contact-info-item-icon">
+                                        <i class="las la-phone"></i>
+                                    </div>
+                                    <div class="home-contact-info-item-text">
+                                        <p class="home-contact-info-item-line"><a href="tel:8867999997">8867999997</a></p>
+                                    </div>
+                                </div>
+                                <div class="home-contact-info-item">
+                                    <div class="home-contact-info-item-icon">
+                                        <i class="las la-map-marker-alt"></i>
+                                    </div>
+                                    <div class="home-contact-info-item-text">
+                                        <p class="home-contact-info-item-line">NO .34 1st Floor, Venkatappa Road, Tasker Town, Off Queens Road, Bengaluru- 560051</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home-contact-form">
+                            <form action="" method="post" class="contact-form">
+                                <div class="contact-form-grid">
+                                    <div class="contact-form-group">
+                                        <label for="name">Name</label>
+                                        <input type="text" id="name" name="contact_name" class="contact-form-input" placeholder="Enter your name" required>
+                                    </div>
+                                    <div class="contact-form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" name="contact_email" class="contact-form-input" placeholder="Enter your email" required>
+                                    </div>
+                                    <div class="contact-form-group">
+                                        <label for="phone">Phone</label>
+                                        <input type="tel" id="phone" name="contact_phone" class="contact-form-input" placeholder="Enter your phone" required minlength="10" maxlength="10">
+                                    </div>
+                                    <div class="contact-form-group">
+                                        <label for="subject">Subject</label>
+                                        <input type="text" id="subject" name="contact_subject" class="contact-form-input" placeholder="Enter your subject" required>
+                                    </div>
+                                    <div class="contact-form-group contact-form-group-wide">
+                                        <label for="message">How can we help you?</label>
+                                        <textarea id="message" name="contact_message" class="contact-form-input" placeholder="Enter your message" required rows="3"></textarea>
+                                    </div>
+                                </div>
+                                <div class="contact-form-submit">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="page-footer" style="--bg-img: url(https://www.nithyatickets.com/assets/images/footer-bg.png)">
+        <div class="container">
+            <div class="page-footer-row">
+                <p class="page-footer-text">© 2025 Nithya Tickets | <a href="https://www.nithyatickets.com/terms">Terms &amp; Conditions</a></p>
+                <ul class="header-nav-social-links">
+                    <li><a href="https://www.facebook.com/profile.php?id=6157163941" target="_blank" style="color: #1877f2;"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/nithyaticket/" target="_blank" style="color: #e1306c;"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/nithya-tickets-1296303" target="_blank" style="color: #0a66c2;"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://x.com/NithyaTick24" target="_blank" style="color: #14171a;"><i class="fab fa-x-twitter"></i></a></li>
+                    <li><a href="https://www.youtube.com/@nithyatickets" target="_blank" style="color: #ff0000;"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+                <p class="page-footer-text page-footer-powered">Powered by KADAGAM VENTURES PRIVATE LIMITED</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#home" class="scroll-top-link" data-title="Scroll to Top"><i class="las la-angle-up"></i></a>
+</body>
+</html>
